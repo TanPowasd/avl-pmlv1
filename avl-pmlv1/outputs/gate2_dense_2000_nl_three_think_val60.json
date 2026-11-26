@@ -1,0 +1,87 @@
+{
+  "eval_file": "e:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_val_fsq.jsonl",
+  "mode": "bf16_merged",
+  "n_problems": 60,
+  "peak_vram_gb": 8.0,
+  "arms": {
+    "nl_three_think_sft": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 35.0,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 70.59
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 20.93
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 12.5
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 14.29
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 100.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 75.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 6.67
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 20.0
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 40.0
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 73.33
+        }
+      },
+      "avg_think_tokens": 231.5,
+      "compression_vs_nl_cot": 1.0,
+      "avg_prefill_ms": 55.57,
+      "avg_think_ms": 9498.17,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 9553.74,
+      "p50_e2e_ms": 10182.98,
+      "p95_e2e_ms": 11697.31,
+      "throughput_prob_per_sec": 0.105,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    }
+  },
+  "gold_dsl_executor_upper_bound": {
+    "n_gradable": 60,
+    "correct": 51,
+    "exact_match_pct": 85.0,
+    "avg_exec_ms": 0.07
+  }
+}

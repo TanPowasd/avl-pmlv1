@@ -1,0 +1,191 @@
+{
+  "trial_passed": true,
+  "q_avl_pml_stats": {
+    "quantized_linears": 966,
+    "lora_adapters": 150,
+    "trainable_params": 251197927,
+    "quantized_buffer_mb": 1773
+  },
+  "optimizer_5group_summary": {
+    "A": {
+      "num_tensors": 248.0,
+      "num_params": 133889537.0,
+      "lr": 3e-05,
+      "weight_decay": 0.01
+    },
+    "A_lora": {
+      "num_tensors": 300.0,
+      "num_params": 12976128.0,
+      "lr": 0.00015000000000000001,
+      "weight_decay": 0.01
+    },
+    "B": {
+      "num_tensors": 0.0,
+      "num_params": 0.0,
+      "lr": 5e-05,
+      "weight_decay": 0.01
+    },
+    "C_emb": {
+      "num_tensors": 19.0,
+      "num_params": 8595968.0,
+      "lr": 0.00015,
+      "weight_decay": 0.01
+    },
+    "C": {
+      "num_tensors": 336.0,
+      "num_params": 45316225.0,
+      "lr": 0.0005,
+      "weight_decay": 0.01
+    },
+    "D": {
+      "num_tensors": 400.0,
+      "num_params": 83813.0,
+      "lr": 0.00015,
+      "weight_decay": 0.0
+    },
+    "E": {
+      "num_tensors": 12.0,
+      "num_params": 50336256.0,
+      "lr": 0.0025,
+      "weight_decay": 0.0
+    }
+  },
+  "step5_grad_norms_by_group": {
+    "A": 4632.904,
+    "A_lora": 527.9384,
+    "C_emb": 10002.0426,
+    "C": 5297.0471,
+    "D": 92.3139,
+    "E": 1.0186
+  },
+  "peak_vram_gb": 6.69,
+  "vram_redline_gb": 14.4,
+  "steps": 15,
+  "elapsed_sec": 67.58,
+  "ms_per_step": 4505.3,
+  "early_4step_mean_diff_loss": 9.6654,
+  "late_4step_mean_diff_loss": 7.3259,
+  "loss_drop": 2.3395,
+  "step_logs": [
+    {
+      "step": 1,
+      "loss_total": 9.7745,
+      "loss_diff": 9.6654,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5755
+    },
+    {
+      "step": 2,
+      "loss_total": 9.5029,
+      "loss_diff": 9.392,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5755
+    },
+    {
+      "step": 3,
+      "loss_total": 9.2999,
+      "loss_diff": 9.1882,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5755
+    },
+    {
+      "step": 4,
+      "loss_total": 9.1734,
+      "loss_diff": 9.058,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5755
+    },
+    {
+      "step": 5,
+      "loss_total": 9.3674,
+      "loss_diff": 9.2467,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5755
+    },
+    {
+      "step": 6,
+      "loss_total": 8.9756,
+      "loss_diff": 8.8555,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5755
+    },
+    {
+      "step": 7,
+      "loss_total": 8.4224,
+      "loss_diff": 8.306,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5754
+    },
+    {
+      "step": 8,
+      "loss_total": 8.1964,
+      "loss_diff": 8.0794,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5754
+    },
+    {
+      "step": 9,
+      "loss_total": 8.078,
+      "loss_diff": 7.959,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5754
+    },
+    {
+      "step": 10,
+      "loss_total": 7.8367,
+      "loss_diff": 7.7208,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5754
+    },
+    {
+      "step": 11,
+      "loss_total": 7.7713,
+      "loss_diff": 7.6573,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5753
+    },
+    {
+      "step": 12,
+      "loss_total": 7.6397,
+      "loss_diff": 7.5267,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5753
+    },
+    {
+      "step": 13,
+      "loss_total": 7.5643,
+      "loss_diff": 7.4514,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5753
+    },
+    {
+      "step": 14,
+      "loss_total": 7.4605,
+      "loss_diff": 7.3468,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5753
+    },
+    {
+      "step": 15,
+      "loss_total": 7.4404,
+      "loss_diff": 7.3259,
+      "active_experts": 2.0,
+      "row_entropy_syn": 1.752,
+      "syn_adv_overlap": 0.5753
+    }
+  ]
+}

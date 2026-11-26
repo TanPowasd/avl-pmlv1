@@ -1,0 +1,42 @@
+{
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5080",
+  "total_params_M": 40.89,
+  "active_params_M": 22.34,
+  "level1": {
+    "avl_pmlv1_full": {
+      "exact_match": 0.0,
+      "ms_per_problem": 56.573,
+      "avg_active_experts": 2.0,
+      "kendall_tau": -0.002,
+      "std_alpha_eng": 0.425
+    },
+    "static_top2_baseline": {
+      "exact_match": 7.29,
+      "ms_per_problem": 26.564,
+      "avg_active_experts": 2.0,
+      "kendall_tau": 0.0,
+      "std_alpha_eng": 0.0
+    },
+    "wo_static_engram": {
+      "exact_match": 0.0,
+      "ms_per_problem": 57.093,
+      "avg_active_experts": 2.0,
+      "kendall_tau": -0.001,
+      "std_alpha_eng": 0.0
+    },
+    "wo_bipolar_graph": {
+      "exact_match": 0.0,
+      "ms_per_problem": 31.73,
+      "avg_active_experts": 2.0,
+      "kendall_tau": -0.001,
+      "std_alpha_eng": 0.426
+    },
+    "gate1_verdict": {
+      "em_gain_vs_top2": -7.29,
+      "active_routed_saving_pct": 0.0,
+      "passed": false
+    }
+  },
+  "peak_vram_gb": 4.114
+}

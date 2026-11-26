@@ -1,0 +1,353 @@
+{
+  "model_name": "avl-pmlv1.2-4.5b",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "base_model_dir": "E:\\avl-list\\hf_cache\\models--Qwen--Qwen3-4B-Base\\snapshots\\906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "out_ckpt": "E:\\avl-list\\avl-pmlv1\\checkpoints\\avl_pmlv12_4_5b_step0_bf16.safetensors",
+  "ckpt_size_gb": 7.69,
+  "param_summary": {
+    "total_params": 4126800359,
+    "routed_expert_params": 2406481920,
+    "active_params_est": 1882646503
+  },
+  "param_summary_billions": {
+    "total_params": 4.127,
+    "routed_expert_params": 2.406,
+    "active_params_est": 1.883
+  },
+  "surgery_sec": 15.12,
+  "save_sec": 4.82,
+  "total_sec": 68.29,
+  "peak_surgery_vram_gb": 0.74,
+  "mean_moe_full_sum_cos": 0.998942,
+  "min_moe_full_sum_cos": 0.996946,
+  "mean_moe_shared_only_cos": 0.5826,
+  "mean_moe_sparse_k2_cos": 0.7938,
+  "mean_active_experts": 1.93,
+  "mean_alpha_upcycle": 1.6508,
+  "layer_metrics": [
+    {
+      "layer": 0,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 1,
+      "type": "moe",
+      "full_sum_cos": 0.999959,
+      "shared_only_cos": 0.8793,
+      "sparse_k2_cos": 0.9556,
+      "alpha_upcycle": 1.8727,
+      "active_experts": 1.98
+    },
+    {
+      "layer": 2,
+      "type": "moe",
+      "full_sum_cos": 0.999965,
+      "shared_only_cos": 0.826,
+      "sparse_k2_cos": 0.961,
+      "alpha_upcycle": 1.836,
+      "active_experts": 1.99
+    },
+    {
+      "layer": 3,
+      "type": "moe",
+      "full_sum_cos": 0.999952,
+      "shared_only_cos": 0.8535,
+      "sparse_k2_cos": 0.9557,
+      "alpha_upcycle": 1.6807,
+      "active_experts": 1.95
+    },
+    {
+      "layer": 4,
+      "type": "moe",
+      "full_sum_cos": 0.999969,
+      "shared_only_cos": 0.7713,
+      "sparse_k2_cos": 0.927,
+      "alpha_upcycle": 2.1029,
+      "active_experts": 1.96
+    },
+    {
+      "layer": 5,
+      "type": "moe",
+      "full_sum_cos": 0.999944,
+      "shared_only_cos": 0.6395,
+      "sparse_k2_cos": 0.8519,
+      "alpha_upcycle": 1.9519,
+      "active_experts": 1.96
+    },
+    {
+      "layer": 6,
+      "type": "moe",
+      "full_sum_cos": 0.999975,
+      "shared_only_cos": 0.6067,
+      "sparse_k2_cos": 0.806,
+      "alpha_upcycle": 1.2508,
+      "active_experts": 1.92
+    },
+    {
+      "layer": 7,
+      "type": "moe",
+      "full_sum_cos": 0.998295,
+      "shared_only_cos": 0.5362,
+      "sparse_k2_cos": 0.7684,
+      "alpha_upcycle": 1.6408,
+      "active_experts": 1.96
+    },
+    {
+      "layer": 8,
+      "type": "moe",
+      "full_sum_cos": 0.998055,
+      "shared_only_cos": 0.5391,
+      "sparse_k2_cos": 0.7464,
+      "alpha_upcycle": 1.652,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 9,
+      "type": "moe",
+      "full_sum_cos": 0.998818,
+      "shared_only_cos": 0.4881,
+      "sparse_k2_cos": 0.7196,
+      "alpha_upcycle": 1.7472,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 10,
+      "type": "moe",
+      "full_sum_cos": 0.999009,
+      "shared_only_cos": 0.499,
+      "sparse_k2_cos": 0.7322,
+      "alpha_upcycle": 1.789,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 11,
+      "type": "moe",
+      "full_sum_cos": 0.99823,
+      "shared_only_cos": 0.4936,
+      "sparse_k2_cos": 0.7341,
+      "alpha_upcycle": 1.7118,
+      "active_experts": 1.92
+    },
+    {
+      "layer": 12,
+      "type": "moe",
+      "full_sum_cos": 0.998059,
+      "shared_only_cos": 0.5287,
+      "sparse_k2_cos": 0.7505,
+      "alpha_upcycle": 1.6769,
+      "active_experts": 1.96
+    },
+    {
+      "layer": 13,
+      "type": "moe",
+      "full_sum_cos": 0.998757,
+      "shared_only_cos": 0.505,
+      "sparse_k2_cos": 0.7422,
+      "alpha_upcycle": 1.6405,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 14,
+      "type": "moe",
+      "full_sum_cos": 0.999248,
+      "shared_only_cos": 0.4903,
+      "sparse_k2_cos": 0.7302,
+      "alpha_upcycle": 1.7185,
+      "active_experts": 1.95
+    },
+    {
+      "layer": 15,
+      "type": "moe",
+      "full_sum_cos": 0.998182,
+      "shared_only_cos": 0.5204,
+      "sparse_k2_cos": 0.7377,
+      "alpha_upcycle": 1.6758,
+      "active_experts": 1.95
+    },
+    {
+      "layer": 16,
+      "type": "moe",
+      "full_sum_cos": 0.999972,
+      "shared_only_cos": 0.5163,
+      "sparse_k2_cos": 0.7451,
+      "alpha_upcycle": 1.6625,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 17,
+      "type": "moe",
+      "full_sum_cos": 0.997675,
+      "shared_only_cos": 0.5162,
+      "sparse_k2_cos": 0.7383,
+      "alpha_upcycle": 1.6654,
+      "active_experts": 1.94
+    },
+    {
+      "layer": 18,
+      "type": "moe",
+      "full_sum_cos": 0.997983,
+      "shared_only_cos": 0.5431,
+      "sparse_k2_cos": 0.7477,
+      "alpha_upcycle": 1.6042,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 19,
+      "type": "moe",
+      "full_sum_cos": 0.999071,
+      "shared_only_cos": 0.5266,
+      "sparse_k2_cos": 0.7547,
+      "alpha_upcycle": 1.6418,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 20,
+      "type": "moe",
+      "full_sum_cos": 0.997869,
+      "shared_only_cos": 0.4625,
+      "sparse_k2_cos": 0.7218,
+      "alpha_upcycle": 1.625,
+      "active_experts": 1.95
+    },
+    {
+      "layer": 21,
+      "type": "moe",
+      "full_sum_cos": 0.998512,
+      "shared_only_cos": 0.4896,
+      "sparse_k2_cos": 0.7389,
+      "alpha_upcycle": 1.629,
+      "active_experts": 1.94
+    },
+    {
+      "layer": 22,
+      "type": "moe",
+      "full_sum_cos": 0.996946,
+      "shared_only_cos": 0.5207,
+      "sparse_k2_cos": 0.7606,
+      "alpha_upcycle": 1.6849,
+      "active_experts": 1.95
+    },
+    {
+      "layer": 23,
+      "type": "moe",
+      "full_sum_cos": 0.998492,
+      "shared_only_cos": 0.5414,
+      "sparse_k2_cos": 0.7681,
+      "alpha_upcycle": 1.5799,
+      "active_experts": 1.9
+    },
+    {
+      "layer": 24,
+      "type": "moe",
+      "full_sum_cos": 0.999189,
+      "shared_only_cos": 0.5605,
+      "sparse_k2_cos": 0.7857,
+      "alpha_upcycle": 1.5376,
+      "active_experts": 1.91
+    },
+    {
+      "layer": 25,
+      "type": "moe",
+      "full_sum_cos": 0.999795,
+      "shared_only_cos": 0.5174,
+      "sparse_k2_cos": 0.7671,
+      "alpha_upcycle": 1.5165,
+      "active_experts": 1.91
+    },
+    {
+      "layer": 26,
+      "type": "moe",
+      "full_sum_cos": 0.999751,
+      "shared_only_cos": 0.539,
+      "sparse_k2_cos": 0.7716,
+      "alpha_upcycle": 1.5702,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 27,
+      "type": "moe",
+      "full_sum_cos": 0.999716,
+      "shared_only_cos": 0.5583,
+      "sparse_k2_cos": 0.7783,
+      "alpha_upcycle": 1.5343,
+      "active_experts": 1.89
+    },
+    {
+      "layer": 28,
+      "type": "moe",
+      "full_sum_cos": 0.999678,
+      "shared_only_cos": 0.5724,
+      "sparse_k2_cos": 0.7956,
+      "alpha_upcycle": 1.5905,
+      "active_experts": 1.95
+    },
+    {
+      "layer": 29,
+      "type": "moe",
+      "full_sum_cos": 0.999636,
+      "shared_only_cos": 0.6003,
+      "sparse_k2_cos": 0.8127,
+      "alpha_upcycle": 1.5917,
+      "active_experts": 1.91
+    },
+    {
+      "layer": 30,
+      "type": "moe",
+      "full_sum_cos": 0.998898,
+      "shared_only_cos": 0.6153,
+      "sparse_k2_cos": 0.8248,
+      "alpha_upcycle": 1.5519,
+      "active_experts": 1.85
+    },
+    {
+      "layer": 31,
+      "type": "moe",
+      "full_sum_cos": 0.997862,
+      "shared_only_cos": 0.6531,
+      "sparse_k2_cos": 0.8387,
+      "alpha_upcycle": 1.5832,
+      "active_experts": 1.88
+    },
+    {
+      "layer": 32,
+      "type": "moe",
+      "full_sum_cos": 0.997185,
+      "shared_only_cos": 0.6348,
+      "sparse_k2_cos": 0.8359,
+      "alpha_upcycle": 1.5857,
+      "active_experts": 1.91
+    },
+    {
+      "layer": 33,
+      "type": "moe",
+      "full_sum_cos": 0.999417,
+      "shared_only_cos": 0.6996,
+      "sparse_k2_cos": 0.8574,
+      "alpha_upcycle": 1.5696,
+      "active_experts": 1.93
+    },
+    {
+      "layer": 34,
+      "type": "moe",
+      "full_sum_cos": 0.999973,
+      "shared_only_cos": 0.5634,
+      "sparse_k2_cos": 0.8275,
+      "alpha_upcycle": 1.4544,
+      "active_experts": 1.97
+    },
+    {
+      "layer": 35,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    }
+  ]
+}

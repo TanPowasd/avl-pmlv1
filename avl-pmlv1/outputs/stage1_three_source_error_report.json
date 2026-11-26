@@ -1,0 +1,31 @@
+{
+  "total_emitted": 15000,
+  "target_total": 15000,
+  "problem_disjoint_guaranteed": true,
+  "ratio_actual_pct": {
+    "real_cascade_drift": 40.0,
+    "ast_ssa_mutation": 40.0,
+    "clean_no_edit_negative": 20.0
+  },
+  "counts_by_source": {
+    "real_cascade_drift": 6000,
+    "ast_ssa_mutation": 6000,
+    "clean_no_edit_negative": 3000
+  },
+  "counts_by_subtype": {
+    "cascade_drift": 6000,
+    "op_flip": 1051,
+    "reg_pointer_swap": 1062,
+    "val_off_by_one": 1606,
+    "premature_eot": 1081,
+    "fsq_concept_corrupt": 1200,
+    "verified_clean_gold": 3000
+  },
+  "counts_by_domain": {
+    "math": 4687,
+    "code": 8124,
+    "logic": 2189
+  },
+  "output_path": "E:\\avl-list\\avl-pmlv1\\data\\stage1\\stage1_three_source_error_set.jsonl",
+  "elapsed_sec": 4.73
+}

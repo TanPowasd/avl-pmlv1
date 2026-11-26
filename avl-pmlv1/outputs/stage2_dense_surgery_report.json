@@ -1,0 +1,353 @@
+{
+  "model_name": "avl-pmlv1.2-4b-dense",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "base_model_dir": "e:\\avl-list\\hf_cache\\models--Qwen--Qwen3-4B-Base\\snapshots\\906bfd4b4dc7f14ee4320094d8b41684abff8539",
+  "out_ckpt": "checkpoints\\avl_pmlv12_4b_dense_step0_bf16.safetensors",
+  "ckpt_size_gb": 7.66,
+  "param_summary": {
+    "total_params": 4111417185,
+    "routed_expert_params": 0,
+    "active_params_est": 3672124769
+  },
+  "param_summary_billions": {
+    "total_params": 4.111,
+    "routed_expert_params": 0.0,
+    "active_params_est": 3.672
+  },
+  "surgery_sec": 5.48,
+  "save_sec": 4.45,
+  "total_sec": 50.27,
+  "peak_surgery_vram_gb": 0.0,
+  "mean_moe_full_sum_cos": 1.0,
+  "min_moe_full_sum_cos": 1.0,
+  "mean_moe_shared_only_cos": 1.0,
+  "mean_moe_sparse_k2_cos": 1.0,
+  "mean_active_experts": 0.0,
+  "mean_alpha_upcycle": 1.0,
+  "layer_metrics": [
+    {
+      "layer": 0,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 1,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 2,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 3,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 4,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 5,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 6,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 7,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 8,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 9,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 10,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 11,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 12,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 13,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 14,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 15,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 16,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 17,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 18,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 19,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 20,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 21,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 22,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 23,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 24,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 25,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 26,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 27,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 28,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 29,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 30,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 31,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 32,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 33,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 34,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    },
+    {
+      "layer": 35,
+      "type": "dense",
+      "full_sum_cos": 1.0,
+      "shared_only_cos": 1.0,
+      "sparse_k2_cos": 1.0,
+      "alpha_upcycle": 1.0,
+      "active_experts": 0.0
+    }
+  ]
+}

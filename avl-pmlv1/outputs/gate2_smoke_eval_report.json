@@ -1,0 +1,194 @@
+{
+  "eval_file": "data\\stage1_mega\\mega_val_fsq.jsonl",
+  "mode": "q_avl_5080",
+  "n_problems": 6,
+  "peak_vram_gb": 3.62,
+  "arms": {
+    "ar_pml_on": {
+      "n_total": 6,
+      "n_gradable": 6,
+      "exact_match_pct": 0.0,
+      "by_step_bucket": {
+        "15-24": {
+          "n": 2,
+          "exact_match_pct": 0.0
+        },
+        "25-32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "<=6": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        ">32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        }
+      },
+      "avg_think_tokens": 128.0,
+      "compression_vs_nl_cot": 1.29,
+      "avg_prefill_ms": 308.58,
+      "avg_think_ms": 15673.79,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 2676.28,
+      "avg_total_e2e_ms": 18658.64,
+      "p50_e2e_ms": 18400.01,
+      "p95_e2e_ms": 20115.89,
+      "throughput_prob_per_sec": 0.054,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "block_dllm_pml_on": {
+      "n_total": 6,
+      "n_gradable": 6,
+      "exact_match_pct": 0.0,
+      "by_step_bucket": {
+        "15-24": {
+          "n": 2,
+          "exact_match_pct": 0.0
+        },
+        "25-32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "<=6": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        ">32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        }
+      },
+      "avg_think_tokens": 128.0,
+      "compression_vs_nl_cot": 1.29,
+      "avg_prefill_ms": 128.48,
+      "avg_think_ms": 8280.03,
+      "avg_repair_ms": 4972.49,
+      "avg_verbalize_ms": 2238.97,
+      "avg_total_e2e_ms": 15619.98,
+      "p50_e2e_ms": 16068.28,
+      "p95_e2e_ms": 16177.5,
+      "throughput_prob_per_sec": 0.064,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 16.67,
+        "repair_overhead_ms": 4972.49,
+        "repair_overhead_pct": 31.83
+      }
+    },
+    "nl_cot_ref": {
+      "n_total": 6,
+      "n_gradable": 6,
+      "exact_match_pct": 16.67,
+      "by_step_bucket": {
+        "15-24": {
+          "n": 2,
+          "exact_match_pct": 0.0
+        },
+        "25-32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "<=6": {
+          "n": 1,
+          "exact_match_pct": 100.0
+        },
+        ">32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        }
+      },
+      "avg_think_tokens": 165.7,
+      "compression_vs_nl_cot": 1.0,
+      "avg_prefill_ms": 132.48,
+      "avg_think_ms": 18773.4,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 18905.88,
+      "p50_e2e_ms": 21900.87,
+      "p95_e2e_ms": 21941.58,
+      "throughput_prob_per_sec": 0.053,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "dsl_ext_exec(ar_pml_on)": {
+      "n_total": 6,
+      "n_gradable": 6,
+      "exact_match_pct": 0.0,
+      "by_step_bucket": {
+        "15-24": {
+          "n": 2,
+          "exact_match_pct": 0.0
+        },
+        "25-32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "<=6": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        ">32": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        }
+      },
+      "avg_think_tokens": 128.0,
+      "compression_vs_nl_cot": 1.29,
+      "avg_prefill_ms": 0.0,
+      "avg_think_ms": 15982.36,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.07,
+      "avg_total_e2e_ms": 15982.43,
+      "p50_e2e_ms": 15714.51,
+      "p95_e2e_ms": 17425.46,
+      "throughput_prob_per_sec": 0.063,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    }
+  },
+  "gold_dsl_executor_upper_bound": {
+    "n_gradable": 6,
+    "correct": 2,
+    "exact_match_pct": 33.33,
+    "avg_exec_ms": 0.077
+  }
+}

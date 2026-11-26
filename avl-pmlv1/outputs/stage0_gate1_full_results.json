@@ -1,0 +1,108 @@
+{
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5080",
+  "total_params_M": 41.64,
+  "active_params_M": 23.1,
+  "level1": {
+    "avl_pmlv1_full": {
+      "exact_match": 62.5,
+      "ms_per_problem": 58.919,
+      "avg_active_experts": 0.991,
+      "kendall_tau": 0.057,
+      "std_alpha_eng": 0.484
+    },
+    "static_top2_baseline": {
+      "exact_match": 27.08,
+      "ms_per_problem": 38.468,
+      "avg_active_experts": 2.0,
+      "kendall_tau": 0.0,
+      "std_alpha_eng": 0.0
+    },
+    "wo_static_engram": {
+      "exact_match": 32.81,
+      "ms_per_problem": 66.144,
+      "avg_active_experts": 1.065,
+      "kendall_tau": 0.069,
+      "std_alpha_eng": 0.0
+    },
+    "wo_bipolar_graph": {
+      "exact_match": 51.04,
+      "ms_per_problem": 44.298,
+      "avg_active_experts": 1.009,
+      "kendall_tau": 0.06,
+      "std_alpha_eng": 0.414
+    },
+    "gate1_verdict": {
+      "em_gain_vs_top2": 35.42,
+      "active_routed_saving_pct": 50.45,
+      "passed": false
+    }
+  },
+  "level2": {
+    "avl_pmlv1_full": {
+      "rule_chain_extrap_em": 11.88,
+      "draft_exact_match": 41.88,
+      "final_exact_match": 77.5,
+      "same_pit_relapse_pct": 0.0,
+      "net_fix_pct": 35.62,
+      "ms_per_problem": 16.973
+    },
+    "pure_block_dllm": {
+      "rule_chain_extrap_em": 12.5,
+      "draft_exact_match": 48.75,
+      "final_exact_match": 48.75,
+      "same_pit_relapse_pct": 0.0,
+      "net_fix_pct": 0.0,
+      "ms_per_problem": 7.411
+    },
+    "wo_pain_imprint": {
+      "rule_chain_extrap_em": 9.38,
+      "draft_exact_match": 50.0,
+      "final_exact_match": 54.38,
+      "same_pit_relapse_pct": 80.0,
+      "net_fix_pct": 4.38,
+      "ms_per_problem": 15.217
+    },
+    "wo_wet_cement": {
+      "rule_chain_extrap_em": 15.0,
+      "draft_exact_match": 34.38,
+      "final_exact_match": 71.25,
+      "same_pit_relapse_pct": 0.0,
+      "net_fix_pct": 36.88,
+      "ms_per_problem": 17.085
+    },
+    "equal_wallclock_best_of_n_ar": {
+      "n_samples": 1,
+      "final_exact_match": 46.25,
+      "ms_per_problem": 12.71
+    },
+    "gate1_verdict": {
+      "beats_pure_block_dllm": false,
+      "beats_or_ties_best_of_n": true,
+      "relapse_le_20pct": true,
+      "netfix_ge_0": true,
+      "passed": false
+    }
+  },
+  "level3": {
+    "symbolic_block_dllm": {
+      "exact_match": 100.0,
+      "ms_per_problem": 26.207,
+      "avg_active_experts": 1.019,
+      "sym_tokens": 32
+    },
+    "nl_cot_kv_ar": {
+      "exact_match": 100.0,
+      "ms_per_problem": 95.539,
+      "cot_tokens": 144
+    },
+    "wallclock_speedup_x": 3.65,
+    "token_compression_x": 4.5,
+    "gate1_verdict": {
+      "em_ge_nl_cot": true,
+      "speedup_ge_2x": true,
+      "passed": true
+    }
+  },
+  "peak_vram_gb": 10.08
+}

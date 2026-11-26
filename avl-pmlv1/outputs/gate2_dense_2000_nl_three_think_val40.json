@@ -1,0 +1,75 @@
+{
+  "eval_file": "e:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_val_gsm8k_pw_kk_40.jsonl",
+  "mode": "bf16_merged",
+  "n_problems": 40,
+  "peak_vram_gb": 8.0,
+  "arms": {
+    "nl_three_think_sft": {
+      "n_total": 40,
+      "n_gradable": 40,
+      "exact_match_pct": 55.0,
+      "by_domain": {
+        "logic": {
+          "n": 20,
+          "exact_match_pct": 25.0
+        },
+        "math": {
+          "n": 20,
+          "exact_match_pct": 85.0
+        }
+      },
+      "by_source": {
+        "K-and-K/knights-and-knaves": {
+          "n": 10,
+          "exact_match_pct": 10.0
+        },
+        "openai/gsm8k": {
+          "n": 20,
+          "exact_match_pct": 85.0
+        },
+        "tasksource/proofwriter": {
+          "n": 10,
+          "exact_match_pct": 40.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 5,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 11,
+          "exact_match_pct": 45.45
+        },
+        "<=6": {
+          "n": 24,
+          "exact_match_pct": 70.83
+        }
+      },
+      "avg_think_tokens": 213.7,
+      "compression_vs_nl_cot": 1.0,
+      "avg_prefill_ms": 73.34,
+      "avg_think_ms": 9718.23,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 9791.57,
+      "p50_e2e_ms": 10385.17,
+      "p95_e2e_ms": 14690.86,
+      "throughput_prob_per_sec": 0.102,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    }
+  },
+  "gold_dsl_executor_upper_bound": {
+    "n_gradable": 40,
+    "correct": 29,
+    "exact_match_pct": 72.5,
+    "avg_exec_ms": 0.031
+  }
+}

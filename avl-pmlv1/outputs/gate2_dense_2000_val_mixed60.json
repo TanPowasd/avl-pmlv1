@@ -1,0 +1,452 @@
+{
+  "eval_file": "e:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_val_fsq.jsonl",
+  "mode": "bf16_merged",
+  "n_problems": 60,
+  "peak_vram_gb": 8.15,
+  "arms": {
+    "block_dllm_pml_off": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 50.0,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 82.35
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 37.21
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 40.62
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 14.29
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 50.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 87.5
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 20.0
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 40.0
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 53.33
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 86.67
+        }
+      },
+      "avg_think_tokens": 205.9,
+      "compression_vs_nl_cot": 1.04,
+      "avg_prefill_ms": 56.68,
+      "avg_think_ms": 4865.53,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 345.45,
+      "avg_total_e2e_ms": 5267.65,
+      "p50_e2e_ms": 6242.25,
+      "p95_e2e_ms": 7380.19,
+      "throughput_prob_per_sec": 0.19,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "block_dllm_pml_on": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 60.0,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 94.12
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 46.51
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 56.25
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 14.29
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 25.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 100.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 40.0
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 46.67
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 73.33
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 80.0
+        }
+      },
+      "avg_think_tokens": 135.6,
+      "compression_vs_nl_cot": 1.57,
+      "avg_prefill_ms": 46.33,
+      "avg_think_ms": 4130.34,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 244.15,
+      "avg_total_e2e_ms": 4420.82,
+      "p50_e2e_ms": 3502.95,
+      "p95_e2e_ms": 9208.92,
+      "throughput_prob_per_sec": 0.226,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "nl_cot_ref": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 10.0,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 0.0
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 13.95
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 12.5
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 50.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 0.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 13.33
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 6.67
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 6.67
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 13.33
+        }
+      },
+      "avg_think_tokens": 229.5,
+      "compression_vs_nl_cot": 0.93,
+      "avg_prefill_ms": 45.79,
+      "avg_think_ms": 9751.73,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 9797.52,
+      "p50_e2e_ms": 10703.58,
+      "p95_e2e_ms": 12107.74,
+      "throughput_prob_per_sec": 0.102,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "nl_cot_sft": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 41.67,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 82.35
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 25.58
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 18.75
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 14.29
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 100.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 87.5
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 20.0
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 13.33
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 60.0
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 73.33
+        }
+      },
+      "avg_think_tokens": 213.2,
+      "compression_vs_nl_cot": 1.0,
+      "avg_prefill_ms": 52.57,
+      "avg_think_ms": 10394.92,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 10447.49,
+      "p50_e2e_ms": 11097.92,
+      "p95_e2e_ms": 15448.82,
+      "throughput_prob_per_sec": 0.096,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "dsl_ext_exec(block_dllm_pml_off)": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 20.0,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 70.59
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 0.0
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 0.0
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 0.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 75.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 0.0
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 33.33
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 46.67
+        }
+      },
+      "avg_think_tokens": 205.9,
+      "compression_vs_nl_cot": 1.04,
+      "avg_prefill_ms": 0.0,
+      "avg_think_ms": 4922.2,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.06,
+      "avg_total_e2e_ms": 4922.26,
+      "p50_e2e_ms": 6067.74,
+      "p95_e2e_ms": 6124.88,
+      "throughput_prob_per_sec": 0.203,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "dsl_ext_exec(block_dllm_pml_on)": {
+      "n_total": 60,
+      "n_gradable": 60,
+      "exact_match_pct": 15.0,
+      "by_domain": {
+        "logic": {
+          "n": 17,
+          "exact_match_pct": 47.06
+        },
+        "math": {
+          "n": 43,
+          "exact_match_pct": 2.33
+        }
+      },
+      "by_source": {
+        "AI-MO/NuminaMath-TIR": {
+          "n": 32,
+          "exact_match_pct": 3.12
+        },
+        "K-and-K/knights-and-knaves": {
+          "n": 1,
+          "exact_match_pct": 0.0
+        },
+        "TIGER-Lab/MathInstruct": {
+          "n": 7,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 4,
+          "exact_match_pct": 0.0
+        },
+        "tasksource/proofwriter": {
+          "n": 16,
+          "exact_match_pct": 50.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 15,
+          "exact_match_pct": 0.0
+        },
+        "25-32": {
+          "n": 15,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 15,
+          "exact_match_pct": 20.0
+        },
+        "<=6": {
+          "n": 15,
+          "exact_match_pct": 40.0
+        }
+      },
+      "avg_think_tokens": 135.6,
+      "compression_vs_nl_cot": 1.57,
+      "avg_prefill_ms": 0.0,
+      "avg_think_ms": 4176.67,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.04,
+      "avg_total_e2e_ms": 4176.71,
+      "p50_e2e_ms": 3240.61,
+      "p95_e2e_ms": 8368.23,
+      "throughput_prob_per_sec": 0.239,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    }
+  },
+  "gold_dsl_executor_upper_bound": {
+    "n_gradable": 60,
+    "correct": 51,
+    "exact_match_pct": 85.0,
+    "avg_exec_ms": 0.043
+  }
+}

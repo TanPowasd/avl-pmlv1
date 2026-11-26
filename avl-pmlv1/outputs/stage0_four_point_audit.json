@@ -1,0 +1,42 @@
+{
+  "status": "stopped_early_on_clear_falsification_signal_round1",
+  "hardware": "NVIDIA GeForce RTX 5080 (16GB GDDR7, sm_120, Windows 11)",
+  "preflight_unit_tests": "7/7 PASSED (TF32-off equivalence < 1e-5, Engram Step-1 guard & 4-fold zero leakage, Lazy Commit, Pain Deadlock Guard)",
+  "audit_1_speed_and_kv_compile_fairness": {
+    "kv_cache_enabled_on_nl_ar": true,
+    "compile_backend": "native_torch_cuda_cudagraph_static_kv (triton_unavailable_on_win32)",
+    "batch_32": {
+      "sync_free_eager_ms_per_problem": {"nl_kv_ar": 77.108, "sym_block_dllm": 24.644},
+      "sync_free_eager_speedup_x": 3.13,
+      "cudagraph_static_kv_ms_per_problem": {"nl_kv_ar": 12.643, "sym_block_dllm": 5.674},
+      "cudagraph_static_kv_speedup_x": 2.23
+    },
+    "batch_1_single_stream": {
+      "sync_free_eager_ms_per_problem": {"nl_kv_ar": 2425.697, "sym_block_dllm": 717.078},
+      "sync_free_eager_speedup_x": 3.38,
+      "cudagraph_static_kv_ms_per_problem": {"nl_kv_ar": 308.642, "sym_block_dllm": 95.315},
+      "cudagraph_static_kv_speedup_x": 3.24
+    }
+  },
+  "audit_2_zero_leakage_canary": {
+    "poisoned_target_value": -999999,
+    "abs_em_diff": 0.0,
+    "zero_leakage_verified": true
+  },
+  "audit_3_640probs_and_kmax0_ablation_completed_before_stoploss": {
+    "seed_42": {
+      "l3_fixed_640": {"sym_full": 41.88, "sym_k0_knockout": 40.47, "sym_k0_retrain": 76.09, "nl_cot_ar": 100.0},
+      "l3_hard_unseen_20pct_operator_trees_640": {"sym_full": 17.66, "sym_k0_knockout": 16.41, "sym_k0_retrain": 31.09, "nl_cot_ar": 98.75},
+      "l1_4skill_640": {"sym_full": 64.38, "sym_k0_knockout": 64.38, "sym_k0_retrain": 56.41, "static_top2": 27.03}
+    },
+    "seed_1024_partial": {
+      "l3_fixed_640": {"sym_full": 100.0, "sym_k0_knockout": 100.0, "sym_k0_retrain": 100.0, "nl_cot_ar": 100.0}
+    }
+  },
+  "falsification_conclusions": [
+    "VERIFIED: Static Engram (+29.69% on Level 1), Track-2 Pain Imprint (+23.12% & 0.0% relapse vs 80.0% on Level 2c), 16-Slot Wet-Cement (+6.25% on Level 2c), Bipolar Sinkhorn Graph (+11.46% on Level 1), and Pure-Silicon CUDAGraph Block-dLLM Speedup (2.23x @B=32, 3.24x @B=1).",
+    "FALSIFIED_FOR_REFACTOR_1: Tri-State probe_mix + L_util delayed scorer starved routed full-rank experts (K_max=0 inference knock-out caused 0.00% drop on L1 64.38% and L3 100.0%; Kendall tau stalled at 0.06; K0 retrain beat full on L3-Fixed and L3-Hard).",
+    "FALSIFIED_FOR_REFACTOR_2: Packing 2 causally dependent dynamic-operator AST steps into 1 bidirectional 16-slot block collapsed to 17.66% on 20% unseen operator trees (vs NL-CoT 98.75%).",
+    "FALSIFIED_FOR_REFACTOR_3: Level 2a/b S^RO zero-shot rule transfer stalled at ~11.88% because populate_ro_from_prompt was wrapped in torch.no_grad(), freezing ro_init_proj."
+  ]
+}

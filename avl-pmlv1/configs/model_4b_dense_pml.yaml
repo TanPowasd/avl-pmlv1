@@ -1,0 +1,59 @@
+model_name: "avl-pmlv1.2-4b-dense"
+tier: "tier_converged_4b_dense"
+base_model: "Qwen/Qwen3-4B-Base"
+
+num_layers: 36
+hidden_size: 2560
+num_q_heads: 32
+num_kv_heads: 8
+head_dim: 128
+dense_intermediate_size: 9728
+rms_norm_eps: 1.0e-6
+rope_theta: 1000000.0
+use_qk_norm: true
+use_block_idx_embed: false
+cold_start_graft: true
+enable_copy_gate: false
+continuous_esc_whiteboard: true
+
+sym_vocab_size: 19328
+nl_vocab_size: 151936
+op_vocab_size: 256
+fsq_levels: [8, 8, 8, 4, 4]   # 8,192 coarse + 8,192 fine = 16,384
+fsq_residual_rank: 32
+lit_prim_size: 512
+lit_escape_size: 2048
+num_ro_slots: 64
+num_rw_slots: 64
+
+# Converged Route Step 1: 100% Dense FFN Preserved (zero 71.1% FFN pruning!)
+moe_layer_indices: []
+shared_expert_intermediate_size: 512
+num_routed_experts: 8
+routed_expert_intermediate_size: 1152
+probe_rank: 16
+k_max: 2
+k_min_guard: 1
+g_min_guard: 0.25
+c_pain_max: 0.60
+gamma_pain: 0.85
+kappa_gate: 0.20
+router_temp: 0.70
+
+# 8 core layers (0-based {3,7,11,15,19,23,27,31})
+pml_layer_indices: [3, 7, 11, 15, 19, 23, 27, 31]
+pml_state_dim: 64
+
+# Static Engram (0-based {3,15})
+engram_layer_indices: [3, 15]
+engram_num_heads: 6
+engram_num_buckets: 32771
+engram_dim: 128
+
+dir_vector_layer_index: 15
+atomic_chunk_size: 16
+default_block_size: 8
+wet_cement_slots: 8
+max_circuit_breakers: 2
+sparse_snapshot_interval: 4
+pll_guard_margin: 0.08

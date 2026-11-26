@@ -1,0 +1,193 @@
+{
+  "input_path": "e:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_compiled_det.jsonl",
+  "num_compiled_problems": 209799,
+  "train_problems": 188817,
+  "val_unseen_problems": 20982,
+  "total_step_expressions": 3092329,
+  "train_raw_exprs": 2781638,
+  "train_balanced_exprs": 15608,
+  "val_unseen_problem_exprs": 310691,
+  "val_strictly_novel_templates": 97,
+  "unique_train_templates": 1536,
+  "fsq_levels": [
+    8,
+    8,
+    8,
+    4,
+    4
+  ],
+  "codebook_size_per_tier": 8192,
+  "nested_dropout_prob": 0.3,
+  "epochs": 120,
+  "batch_size": 256,
+  "lr": 0.00035,
+  "train_sec": 106.77,
+  "peak_vram_gb": 0.92,
+  "val_full_coarse_plus_fine": {
+    "num_eval_steps": 310691,
+    "token_roundtrip_fidelity_pct": 99.98,
+    "exact_string_match_pct": 99.92,
+    "latent_cosine_sim": 0.9888,
+    "unique_coarse_codes": 630,
+    "unique_fine_codes": 715,
+    "sample_reconstructions": [
+      {
+        "orig": "def @FN(1)",
+        "recon": "def @FN(1)",
+        "fsq_pair": "7728:6651"
+      },
+      {
+        "orig": "const 0",
+        "recon": "const 0",
+        "fsq_pair": "4043:6623"
+      },
+      {
+        "orig": "call len(@IN)",
+        "recon": "call len(@IN)",
+        "fsq_pair": "1059:5332"
+      },
+      {
+        "orig": "const 1",
+        "recon": "const 1",
+        "fsq_pair": "4049:3039"
+      },
+      {
+        "orig": "@R0 - @R1",
+        "recon": "@R0 - @R1",
+        "fsq_pair": "424:528"
+      },
+      {
+        "orig": "call range(@R0)",
+        "recon": "call range(@R0)",
+        "fsq_pair": "8043:6733"
+      },
+      {
+        "orig": "for iter @R0",
+        "recon": "for iter @R0",
+        "fsq_pair": "2948:3130"
+      },
+      {
+        "orig": "const 1",
+        "recon": "const 1",
+        "fsq_pair": "4049:3039"
+      }
+    ]
+  },
+  "val_coarse_only_nested_test": {
+    "num_eval_steps": 310691,
+    "token_roundtrip_fidelity_pct": 99.71,
+    "exact_string_match_pct": 97.26,
+    "latent_cosine_sim": 0.9814,
+    "unique_coarse_codes": 630,
+    "unique_fine_codes": 715,
+    "sample_reconstructions": [
+      {
+        "orig": "def @FN(1)",
+        "recon": "def @FN(1)",
+        "fsq_pair": "7728:6651"
+      },
+      {
+        "orig": "const 0",
+        "recon": "const 0",
+        "fsq_pair": "4043:6623"
+      },
+      {
+        "orig": "call len(@IN)",
+        "recon": "call len(@IN)",
+        "fsq_pair": "1059:5332"
+      },
+      {
+        "orig": "const 1",
+        "recon": "const 1",
+        "fsq_pair": "4049:3039"
+      },
+      {
+        "orig": "@R0 - @R1",
+        "recon": "@R0 - @R1",
+        "fsq_pair": "424:528"
+      },
+      {
+        "orig": "call range(@R0)",
+        "recon": "call range(@R0)",
+        "fsq_pair": "8043:6733"
+      },
+      {
+        "orig": "for iter @R0",
+        "recon": "for iter @R0",
+        "fsq_pair": "2948:3130"
+      },
+      {
+        "orig": "const 1",
+        "recon": "const 1",
+        "fsq_pair": "4049:3039"
+      }
+    ]
+  },
+  "val_strictly_novel_templates_full": {
+    "num_eval_steps": 97,
+    "token_roundtrip_fidelity_pct": 69.41,
+    "exact_string_match_pct": 0.0,
+    "latent_cosine_sim": 0.9859,
+    "unique_coarse_codes": 70,
+    "unique_fine_codes": 77,
+    "sample_reconstructions": [
+      {
+        "orig": "-@ID[@ID, @ID].sum()",
+        "recon": "(@ID(@ID[ @ID)  @I@IIDD @D",
+        "fsq_pair": "4118:1676"
+      },
+      {
+        "orig": "@ID if len(@ID) <= len(@ID)",
+        "recon": "@ID if len(@ID) <= len(@ID",
+        "fsq_pair": "6305:2361"
+      },
+      {
+        "orig": "@ID(@ID, @ID, @ID, index +",
+        "recon": "mix(@ID, @ID, @ID,,@ID   @ID",
+        "fsq_pair": "6678:7280"
+      },
+      {
+        "orig": "'@ID' if tuple(@ID) in @ID",
+        "recon": "'@ID' if   D iI   ==    el",
+        "fsq_pair": "4182:126"
+      },
+      {
+        "orig": "[(@ID, @ID, @ID, @ID, @ID) for",
+        "recon": "[(@ID, @IDD @ID)@@ID",
+        "fsq_pair": "1:4573"
+      },
+      {
+        "orig": "@ID[index].next",
+        "recon": "@ID.index",
+        "fsq_pair": "6860:5616"
+      },
+      {
+        "orig": "max(@ID.values()) if @ID else",
+        "recon": "max(@ID.malie ii) i     ",
+        "fsq_pair": "6223:4284"
+      },
+      {
+        "orig": "call any(@IN)",
+        "recon": "call aex(@IN)",
+        "fsq_pair": "1252:7886"
+      }
+    ]
+  },
+  "annotation_stats": {
+    "annotated_records_ok": 209799,
+    "annotated_records_failed_5checks": 0,
+    "static_5check_pass_pct": 100.0,
+    "unique_vmem_templates_in_corpus": 1613,
+    "corpus_unique_coarse_codes": 1004,
+    "corpus_unique_fine_codes": 1341,
+    "frame_8slot_count": 1821258,
+    "frame_16slot_count": 1271071,
+    "avg_sym_tokens_compact_with_fsq": 97.2,
+    "avg_sym_tokens_aligned_with_fsq": 166.4,
+    "mean_compression_compact_with_fsq_x": 4.31,
+    "mean_compression_aligned_with_fsq_x": 2.52,
+    "output_path": "e:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_fsq_aligned.jsonl",
+    "annotate_sec": 46.83
+  },
+  "ckpt_path": "e:\\avl-list\\avl-pmlv1\\outputs\\stage1_fsq_210k_v12.pt"
+}

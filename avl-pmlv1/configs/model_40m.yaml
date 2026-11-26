@@ -1,0 +1,55 @@
+model_name: "avl-pmlv1-40m"
+tier: "stage0_40m"
+
+# Backbone dimensions
+num_layers: 12
+hidden_size: 512
+num_q_heads: 8
+num_kv_heads: 2
+head_dim: 64
+dense_intermediate_size: 512
+rms_norm_eps: 1.0e-6
+
+# Vocabulary partitions (Stage 0 compact 4,096 V_sym + 1,024 synthetic V_nl)
+sym_vocab_size: 4096
+nl_vocab_size: 1024
+op_vocab_size: 256
+fsq_levels: [8, 4, 4, 4, 2]   # 1,024 coarse + 1,024 fine = 2,048 FSQ codes
+fsq_residual_rank: 16
+lit_prim_size: 512
+lit_escape_size: 1216
+num_ro_slots: 32
+num_rw_slots: 32
+
+# Tri-State MoE -> AVL-PMLv1.1 Capacity-Preserving Adaptive Top-K MoE (1-based layers 2..10 -> 0-based indices 1..9)
+moe_layer_indices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+shared_expert_intermediate_size: 64
+num_routed_experts: 8
+routed_expert_intermediate_size: 256
+probe_rank: 8
+k_max: 2
+k_min_guard: 1
+g_min_guard: 0.25
+c_pain_max: 0.60
+gamma_pain: 0.85
+kappa_gate: 0.50
+router_temp: 0.70
+
+# Attn-PML Track-1 (1-based layers {2,5,8,11} -> 0-based {1,4,7,10})
+pml_layer_indices: [1, 4, 7, 10]
+pml_state_dim: 32
+
+# Static Engram (1-based layers {2,6} -> 0-based {1,5})
+engram_layer_indices: [1, 5]
+engram_num_heads: 4
+engram_num_buckets: 4097      # Prime bucket count near 4,096
+engram_dim: 64
+
+# Diffusion & Direction Vector (1-based layer 4 -> 0-based 3)
+dir_vector_layer_index: 3
+atomic_chunk_size: 16
+default_block_size: 32
+wet_cement_slots: 16
+max_circuit_breakers: 2
+sparse_snapshot_interval: 4
+pll_guard_margin: 0.08

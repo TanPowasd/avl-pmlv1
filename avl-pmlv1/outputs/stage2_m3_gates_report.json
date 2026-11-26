@@ -1,0 +1,37 @@
+{
+  "all_gates_passed": true,
+  "gate_m3_1_step0_parity": {
+    "bf16_infer_peak_vram_gb": 7.77,
+    "full_partition_hidden_cos": 0.999939,
+    "full_partition_logit_cos": 0.999961,
+    "full_partition_top1_match": "4/4",
+    "sparse_k2_step0_hidden_cos": 0.9069,
+    "sparse_k2_step0_logit_cos": 0.9733,
+    "sparse_k2_step0_top1_match": "0/4",
+    "sparse_k2_step0_top5_match": "1/4",
+    "sanity_generation": [
+      {
+        "prompt": "The capital of France is Paris, and the capital of Japan is",
+        "full_sum_gen_8tok": " Tokyo. What is the capital of Germany"
+      }
+    ]
+  },
+  "gate_m3_2_tf32_off_equivalence": {
+    "num_pml_layers_audited": 8,
+    "trace_id": "math_gsm8k_2",
+    "trace_len_tokens": 80,
+    "max_state_abs_err": 8.344650268554688e-07,
+    "max_h_abs_err": 8.940696716308594e-08,
+    "max_yellow_light_err": 1.1920928955078125e-07,
+    "max_red_light_err": 0.0,
+    "passed_lt_1e5": true
+  },
+  "gate_m3_4_canary_and_extrapolation": {
+    "block_idx_embed_removed": true,
+    "engram_zero_leakage_canary_diff": 0.0,
+    "rope_1024tok_128blk_extrap_finite": true,
+    "rope_theta": 1000000.0,
+    "use_qk_norm": true
+  },
+  "elapsed_sec": 84.13
+}

@@ -1,0 +1,259 @@
+{
+  "suite": "Stage 0-Hard Zero-Cheat Stress Tests",
+  "device": "NVIDIA GeForce RTX 5080",
+  "preflight_profile": {
+    "s1_alu24_full_b32": {
+      "ms_per_step": 535.36,
+      "planned": "1200x1",
+      "est_sec": 642.4,
+      "vram": {
+        "alloc_gb": 0.67,
+        "reserved_gb": 9.15,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "s1_alu24_nopml_b32": {
+      "ms_per_step": 211.41,
+      "planned": "1200x1",
+      "est_sec": 253.7,
+      "vram": {
+        "alloc_gb": 0.67,
+        "reserved_gb": 8.74,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "s2_sudoku_full_b64": {
+      "ms_per_step": 151.18,
+      "planned": "1000x3",
+      "est_sec": 453.5,
+      "vram": {
+        "alloc_gb": 0.68,
+        "reserved_gb": 3.43,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "s2_sudoku_pure_b64": {
+      "ms_per_step": 139.54,
+      "planned": "1000x1",
+      "est_sec": 139.5,
+      "vram": {
+        "alloc_gb": 0.67,
+        "reserved_gb": 3.32,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "s3_varlen_full_b64": {
+      "ms_per_step": 240.98,
+      "planned": "1100x1",
+      "est_sec": 265.1,
+      "vram": {
+        "alloc_gb": 0.68,
+        "reserved_gb": 6.14,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "total_estimated_minutes": 33.24
+  },
+  "stress1_alu24_8reg_mod16": {
+    "v11_full_diff_pml": {
+      "final_step24_em": 7.5,
+      "all_steps_read_acc": 7.32,
+      "long_gap_ge8_read_acc": 6.99,
+      "all_steps_alu_acc": 6.9,
+      "inst_copy_acc": 99.71,
+      "avg_active_experts": 1.78,
+      "ms_per_problem": 154.62,
+      "k0_knockout_em": 10.62,
+      "k0_knockout_drop": -3.12,
+      "train_sec": 594.7,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 9.18,
+        "peak_alloc_gb": 8.7
+      },
+      "learned_alpha_calm_rms": 0.1046
+    },
+    "pure_block_dllm_no_pml": {
+      "final_step24_em": 6.25,
+      "all_steps_read_acc": 10.99,
+      "long_gap_ge8_read_acc": 10.67,
+      "all_steps_alu_acc": 10.96,
+      "inst_copy_acc": 100.0,
+      "avg_active_experts": 1.206,
+      "ms_per_problem": 117.14,
+      "k0_knockout_em": 8.12,
+      "k0_knockout_drop": -1.87,
+      "train_sec": 229.2,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 8.74,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "mainstream_causal_kv_ar": {
+      "final_step24_em": 9.38,
+      "all_steps_read_acc": 10.94,
+      "long_gap_ge8_read_acc": 12.18,
+      "all_steps_alu_acc": 10.94,
+      "ms_per_problem": 117.4,
+      "train_sec": 53.1,
+      "vram": {
+        "alloc_gb": 0.8,
+        "reserved_gb": 5.66,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "pml_gain_over_pure_dllm_em": 1.25,
+    "pml_gain_long_gap_read": -3.68
+  },
+  "stress2_sudoku4x4_zero_cheat": {
+    "num_train_boards": 230,
+    "num_unseen_test_boards": 58,
+    "num_test_puzzles": 256,
+    "v11_full_native_pain_wet": {
+      "deterministic_zero_cheat": {
+        "draft_solve_pct": 99.22,
+        "final_solve_pct": 100.0,
+        "retry_gain_pct": 0.78,
+        "exact_board_relapse_pct": 0.0,
+        "ms_per_problem": 5.11
+      },
+      "mild_gumbel_0_30": {
+        "draft_solve_pct": 99.22,
+        "final_solve_pct": 100.0,
+        "retry_gain_pct": 0.78,
+        "exact_board_relapse_pct": 0.0,
+        "ms_per_problem": 4.89
+      },
+      "train_sec": 147.7,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 3.43,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "wo_pain_imprint": {
+      "deterministic_zero_cheat": {
+        "draft_solve_pct": 99.61,
+        "final_solve_pct": 100.0,
+        "retry_gain_pct": 0.39,
+        "exact_board_relapse_pct": 0.0,
+        "ms_per_problem": 4.14
+      },
+      "mild_gumbel_0_30": {
+        "draft_solve_pct": 99.61,
+        "final_solve_pct": 100.0,
+        "retry_gain_pct": 0.39,
+        "exact_board_relapse_pct": 0.0,
+        "ms_per_problem": 4.21
+      },
+      "train_sec": 147.6,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 3.43,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "wo_wet_cement": {
+      "deterministic_zero_cheat": {
+        "draft_solve_pct": 99.22,
+        "final_solve_pct": 99.61,
+        "retry_gain_pct": 0.39,
+        "exact_board_relapse_pct": 50.0,
+        "ms_per_problem": 5.59
+      },
+      "mild_gumbel_0_30": {
+        "draft_solve_pct": 99.22,
+        "final_solve_pct": 99.61,
+        "retry_gain_pct": 0.39,
+        "exact_board_relapse_pct": 50.0,
+        "ms_per_problem": 5.71
+      },
+      "train_sec": 142.9,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 3.43,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "pure_block_dllm": {
+      "deterministic_zero_cheat": {
+        "draft_solve_pct": 99.22,
+        "final_solve_pct": 99.22,
+        "retry_gain_pct": 0.0,
+        "exact_board_relapse_pct": 0.0,
+        "ms_per_problem": 3.41
+      },
+      "mild_gumbel_0_30": {
+        "draft_solve_pct": 99.22,
+        "final_solve_pct": 99.22,
+        "retry_gain_pct": 0.0,
+        "exact_board_relapse_pct": 0.0,
+        "ms_per_problem": 3.41
+      },
+      "train_sec": 120.9,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 3.32,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "equal_wallclock_best_of_n_ar": {
+      "n_samples": 1,
+      "pass1_solve_pct": 96.48,
+      "best_of_n_solve_pct": 96.48,
+      "ms_per_problem": 10.77,
+      "train_sec": 58.1,
+      "vram": {
+        "alloc_gb": 0.4,
+        "reserved_gb": 1.75,
+        "peak_alloc_gb": 8.7
+      }
+    }
+  },
+  "stress3_varlen_autonomous_halt": {
+    "v11_autonomous_prefix_kv": {
+      "in_dist_L2_8": {
+        "exact_halt_and_ans_em": 4.69,
+        "exact_halt_step_acc": 100.0,
+        "avg_blocks_halted": 5.04,
+        "ms_per_problem": 50.23
+      },
+      "extrap_L9_10": {
+        "exact_halt_and_ans_em": 0.0,
+        "exact_halt_step_acc": 0.0,
+        "avg_blocks_halted": 7.0,
+        "ms_per_problem": 40.9
+      },
+      "k0_knockout_em": 5.47,
+      "k0_knockout_drop": -0.78,
+      "zero_leakage_canary": true,
+      "train_sec": 277.1,
+      "vram": {
+        "alloc_gb": 0.35,
+        "reserved_gb": 6.14,
+        "peak_alloc_gb": 8.7
+      }
+    },
+    "mainstream_causal_kv_ar": {
+      "in_dist_L2_8": {
+        "exact_halt_and_ans_em": 22.66,
+        "exact_halt_step_acc": 100.0,
+        "ms_per_problem": 40.44
+      },
+      "extrap_L9_10": {
+        "exact_halt_and_ans_em": 0.0,
+        "exact_halt_step_acc": 0.0,
+        "ms_per_problem": 46.67
+      },
+      "train_sec": 34.7,
+      "vram": {
+        "alloc_gb": 0.54,
+        "reserved_gb": 3.8,
+        "peak_alloc_gb": 8.7
+      }
+    }
+  },
+  "total_wall_clock_minutes": 32.85,
+  "peak_vram_gb": 8.7
+}

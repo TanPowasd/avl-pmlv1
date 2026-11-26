@@ -1,0 +1,31 @@
+{
+  "total_emitted": 30000,
+  "target_total": 30000,
+  "problem_disjoint_guaranteed": true,
+  "ratio_actual_pct": {
+    "real_cascade_drift": 40.0,
+    "ast_ssa_mutation": 40.0,
+    "clean_no_edit_negative": 20.0
+  },
+  "counts_by_source": {
+    "real_cascade_drift": 12000,
+    "ast_ssa_mutation": 12000,
+    "clean_no_edit_negative": 6000
+  },
+  "counts_by_subtype": {
+    "cascade_drift": 12000,
+    "op_flip": 2013,
+    "reg_pointer_swap": 2397,
+    "val_off_by_one": 2809,
+    "premature_eot": 2381,
+    "fsq_concept_corrupt": 2400,
+    "verified_clean_gold": 6000
+  },
+  "counts_by_domain": {
+    "code": 13573,
+    "logic": 6468,
+    "math": 9959
+  },
+  "output_path": "data\\stage1_mega\\mega_three_source_error_set_30k.jsonl",
+  "elapsed_sec": 23.34
+}

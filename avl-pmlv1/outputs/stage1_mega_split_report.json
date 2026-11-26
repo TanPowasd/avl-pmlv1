@@ -1,0 +1,67 @@
+{
+  "train_total": 163497,
+  "train_by_domain": {
+    "math": 54413,
+    "code": 74470,
+    "logic": 34614
+  },
+  "train_by_source": {
+    "TIGER-Lab/MathInstruct": 8723,
+    "KodCode/KodCode-V1": 74088,
+    "AI-MO/NuminaMath-TIR": 39247,
+    "tasksource/proofwriter": 29753,
+    "K-and-K/knights-and-knaves": 4861,
+    "openai/gsm8k": 6059,
+    "mbpp": 382,
+    "nvidia/OpenMathInstruct-1": 384
+  },
+  "val_total": 10000,
+  "val_by_domain": {
+    "math": 4000,
+    "code": 4000,
+    "logic": 2000
+  },
+  "val_by_source": {
+    "openai/gsm8k": 451,
+    "KodCode/KodCode-V1": 3986,
+    "tasksource/proofwriter": 1918,
+    "AI-MO/NuminaMath-TIR": 2867,
+    "TIGER-Lab/MathInstruct": 654,
+    "K-and-K/knights-and-knaves": 82,
+    "nvidia/OpenMathInstruct-1": 28,
+    "mbpp": 14
+  },
+  "internal_blind_test_total": 10000,
+  "internal_blind_test_by_domain": {
+    "code": 4000,
+    "math": 4000,
+    "logic": 2000
+  },
+  "internal_blind_test_by_source": {
+    "KodCode/KodCode-V1": 3980,
+    "AI-MO/NuminaMath-TIR": 2869,
+    "TIGER-Lab/MathInstruct": 674,
+    "K-and-K/knights-and-knaves": 281,
+    "tasksource/proofwriter": 1719,
+    "openai/gsm8k": 429,
+    "nvidia/OpenMathInstruct-1": 28,
+    "mbpp": 20
+  },
+  "official_public_benchmarks_total": 5183,
+  "official_public_benchmarks": {
+    "gsm8k_test": 1319,
+    "humaneval_test": 164,
+    "knights_knaves_test": 700,
+    "math500_test": 500,
+    "mbpp_test": 500,
+    "proofwriter_test": 1000,
+    "zebralogic_test": 1000
+  },
+  "combined_total_test_problems": 15183,
+  "zero_4way_overlap_verified": true,
+  "zero_benchmark_leakage_verified": true,
+  "late_leaks_dropped": 0,
+  "train_path": "E:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_train_fsq.jsonl",
+  "val_path": "E:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_val_fsq.jsonl",
+  "test_path": "E:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_test_fsq.jsonl"
+}

@@ -1,0 +1,35 @@
+# Virtual environments & caches
+.venv/
+venv/
+hf_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Model weights, checkpoints, and large artifacts
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.gguf
+
+# Datasets (reconstruct via scripts/stage1_data/)
+avl-pmlv1/data/
+
+# Logs, secrets, OS & editor files
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
