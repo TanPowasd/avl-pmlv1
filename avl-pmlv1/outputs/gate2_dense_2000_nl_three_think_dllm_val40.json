@@ -1,0 +1,252 @@
+{
+  "eval_file": "E:\\avl-list\\avl-pmlv1\\data\\stage1_mega\\mega_val_gsm8k_pw_kk_40.jsonl",
+  "mode": "bf16_merged",
+  "n_problems": 40,
+  "peak_vram_gb": 7.99,
+  "arms": {
+    "nl_three_think_dllm_b3_t256": {
+      "n_total": 40,
+      "n_gradable": 40,
+      "exact_match_pct": 22.5,
+      "by_domain": {
+        "logic": {
+          "n": 20,
+          "exact_match_pct": 10.0
+        },
+        "math": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        }
+      },
+      "by_source": {
+        "K-and-K/knights-and-knaves": {
+          "n": 10,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        },
+        "tasksource/proofwriter": {
+          "n": 10,
+          "exact_match_pct": 20.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 5,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 11,
+          "exact_match_pct": 9.09
+        },
+        "<=6": {
+          "n": 24,
+          "exact_match_pct": 33.33
+        }
+      },
+      "avg_think_tokens": 213.7,
+      "compression_vs_nl_cot": null,
+      "avg_prefill_ms": 42.24,
+      "avg_think_ms": 4408.01,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 4450.24,
+      "p50_e2e_ms": 4829.33,
+      "p95_e2e_ms": 5755.57,
+      "throughput_prob_per_sec": 0.225,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "nl_three_think_dllm_b4_t256": {
+      "n_total": 40,
+      "n_gradable": 40,
+      "exact_match_pct": 22.5,
+      "by_domain": {
+        "logic": {
+          "n": 20,
+          "exact_match_pct": 10.0
+        },
+        "math": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        }
+      },
+      "by_source": {
+        "K-and-K/knights-and-knaves": {
+          "n": 10,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        },
+        "tasksource/proofwriter": {
+          "n": 10,
+          "exact_match_pct": 20.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 5,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 11,
+          "exact_match_pct": 9.09
+        },
+        "<=6": {
+          "n": 24,
+          "exact_match_pct": 33.33
+        }
+      },
+      "avg_think_tokens": 216.0,
+      "compression_vs_nl_cot": null,
+      "avg_prefill_ms": 39.35,
+      "avg_think_ms": 5112.56,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 5151.9,
+      "p50_e2e_ms": 5858.21,
+      "p95_e2e_ms": 6071.67,
+      "throughput_prob_per_sec": 0.194,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "nl_three_think_dllm_b3_t384": {
+      "n_total": 40,
+      "n_gradable": 40,
+      "exact_match_pct": 42.5,
+      "by_domain": {
+        "logic": {
+          "n": 20,
+          "exact_match_pct": 50.0
+        },
+        "math": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        }
+      },
+      "by_source": {
+        "K-and-K/knights-and-knaves": {
+          "n": 10,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        },
+        "tasksource/proofwriter": {
+          "n": 10,
+          "exact_match_pct": 100.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 5,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 11,
+          "exact_match_pct": 54.55
+        },
+        "<=6": {
+          "n": 24,
+          "exact_match_pct": 45.83
+        }
+      },
+      "avg_think_tokens": 243.8,
+      "compression_vs_nl_cot": null,
+      "avg_prefill_ms": 39.16,
+      "avg_think_ms": 4601.21,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 4640.38,
+      "p50_e2e_ms": 4506.33,
+      "p95_e2e_ms": 7242.02,
+      "throughput_prob_per_sec": 0.215,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    },
+    "nl_three_think_dllm_b4_t384": {
+      "n_total": 40,
+      "n_gradable": 40,
+      "exact_match_pct": 42.5,
+      "by_domain": {
+        "logic": {
+          "n": 20,
+          "exact_match_pct": 50.0
+        },
+        "math": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        }
+      },
+      "by_source": {
+        "K-and-K/knights-and-knaves": {
+          "n": 10,
+          "exact_match_pct": 0.0
+        },
+        "openai/gsm8k": {
+          "n": 20,
+          "exact_match_pct": 35.0
+        },
+        "tasksource/proofwriter": {
+          "n": 10,
+          "exact_match_pct": 100.0
+        }
+      },
+      "by_step_bucket": {
+        "15-24": {
+          "n": 5,
+          "exact_match_pct": 0.0
+        },
+        "7-14": {
+          "n": 11,
+          "exact_match_pct": 54.55
+        },
+        "<=6": {
+          "n": 24,
+          "exact_match_pct": 45.83
+        }
+      },
+      "avg_think_tokens": 244.2,
+      "compression_vs_nl_cot": null,
+      "avg_prefill_ms": 39.69,
+      "avg_think_ms": 5844.49,
+      "avg_repair_ms": 0.0,
+      "avg_verbalize_ms": 0.0,
+      "avg_total_e2e_ms": 5884.18,
+      "p50_e2e_ms": 5779.91,
+      "p95_e2e_ms": 9010.16,
+      "throughput_prob_per_sec": 0.17,
+      "repair_audit": {
+        "fixed_count": 0,
+        "broken_count": 0,
+        "net_fix": 0,
+        "repair_accept_rate_pct": 0.0,
+        "repair_overhead_ms": 0.0,
+        "repair_overhead_pct": 0.0
+      }
+    }
+  }
+}

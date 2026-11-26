@@ -344,7 +344,7 @@ def run_train(args: argparse.Namespace) -> Path:
         torch.nn.utils.clip_grad_norm_(wrapper.parameters(), 1.0)
         opt.step()
         sched.step()
-        if device.type == "cuda" and step % 25 == 0:
+        if device.type == "cuda" and step % 10 == 0:
             torch.cuda.empty_cache()
 
         if step == 1 or step % args.log_every == 0 or step == args.total_steps:

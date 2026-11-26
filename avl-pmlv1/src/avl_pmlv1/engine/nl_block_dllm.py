@@ -120,7 +120,23 @@ class NLBlockDiffusionWrapper(nn.Module):
 
         for l_idx in range(self.model.cfg.num_layers):
             attn_l = self.model.attn_layers[l_idx]
+            ffn = self.model.ffn_layers[l_idx]
             pkv_in = past_kvs[l_idx] if past_kvs is not None else None
+            if use_ckpt and l_idx > 0 and pkv_in is None and not return_kvs:
+                def _layer_fn(
+                    h_in: torch.Tensor,
+                    v_anc: Optional[torch.Tensor],
+                    _attn=attn_l,
+                    _ffn=ffn,
+                ) -> torch.Tensor:
+                    h_gqa_c, _, _ = _attn.gqa(
+                        _attn.norm(h_in), positions=positions, attn_mask=attn_mask, v_anchor=v_anc, past_kv=None
+                    )
+                    return _ffn(h_in + h_gqa_c)
+
+                x = torch.utils.checkpoint.checkpoint(_layer_fn, x, v_anchor, use_reentrant=False)
+                continue
+
             norm_x = attn_l.norm(x)
             h_gqa, v_raw, pkv_out = attn_l.gqa(
                 norm_x, positions=positions, attn_mask=attn_mask, v_anchor=v_anchor, past_kv=pkv_in
@@ -131,7 +147,6 @@ class NLBlockDiffusionWrapper(nn.Module):
             if l_idx == 0:
                 v_anchor = v_raw
 
-            ffn = self.model.ffn_layers[l_idx]
             if use_ckpt:
                 x = torch.utils.checkpoint.checkpoint(ffn, x, use_reentrant=False)
             else:
